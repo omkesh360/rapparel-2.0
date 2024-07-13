@@ -1,0 +1,75 @@
+.buy {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.button,
+.image {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.button {
+  height: 31px;
+  width: 66px;
+  box-shadow: var(--button-shadow);
+  border-radius: var(--br-11xl);
+  background-color: var(--color-darkslateblue-200);
+  padding: var(--padding-8xs) var(--padding-lg);
+}
+.image {
+  align-self: stretch;
+  height: 233px;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  padding: var(--padding-188xl) 0 0 var(--padding-263xl);
+  background-image: url(/public/image1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.menswear {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.card,
+.copy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.copy {
+  align-self: stretch;
+  flex-direction: row;
+  text-align: center;
+  font-size: var(--body-text-size);
+  color: var(--color-black);
+}
+.card {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 var(--padding-2xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  min-width: 80px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--style);
+  font-family: var(--small-text);
+}
+@media screen and (max-width: 450px) {
+  .menswear {
+    font-size: var(--small-text-size);
+    line-height: 24px;
+  }
+}
